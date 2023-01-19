@@ -21,8 +21,7 @@ export default function ContactForm({ onSubmit }) {
     e.preventDefault();
     const newContact = {
       name: name,
-      number: number,
-      id: nanoid(),
+      number: number
     };
     onSubmit(newContact);
     setName('');
