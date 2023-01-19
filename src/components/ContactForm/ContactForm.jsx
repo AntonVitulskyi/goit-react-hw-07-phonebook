@@ -15,7 +15,7 @@ export default function ContactForm({ onSubmit }) {
       setNumber(e.target.value);
     }
   };
-
+ 
   const handleAddContact = e => {
     e.preventDefault();
     const newContact = {
