@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import ContactItem from 'components/ContactItem/ContactItem';
 import styles from '../ContactList/ContactList.module.css';
 
-export default function ContactList({ onClickDeleteContact }) {
+export default function ContactList() {
   const contacts = useSelector(state => state.contacts.items);
   const filter = useSelector(state => state.filter);
 
@@ -26,7 +26,6 @@ export default function ContactList({ onClickDeleteContact }) {
             id={contact.id}
             name={contact.name}
             number={contact.number}
-            onClickDeleteContact={onClickDeleteContact}
           />
         ))}
       </ul>
