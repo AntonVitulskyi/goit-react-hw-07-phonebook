@@ -26,7 +26,7 @@ export default function ContactForm({ onSubmit }) {
     setName('');
     setNumber('');
   };
-
+  
   return (
     <>
       <h2 className={styles.title}>Phonebook</h2>
